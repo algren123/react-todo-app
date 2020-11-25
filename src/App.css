@@ -1,38 +1,101 @@
+:root {
+  background-color: #f7f1e3;
+}
+
 .App {
+  min-height: 90vh;
+  background-color: #f7f1e3;
+  height: 100%;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 50%;
+}
+
+h5 {
+  margin: 0;
+}
+
+.date-month {
+  margin-top: 30px;
+}
+
+input:not([type]),
+input[type='text']:not(.browser-default),
+input[type='password']:not(.browser-default),
+input[type='email']:not(.browser-default),
+input[type='url']:not(.browser-default),
+input[type='time']:not(.browser-default),
+input[type='date']:not(.browser-default),
+input[type='datetime']:not(.browser-default),
+input[type='datetime-local']:not(.browser-default),
+input[type='tel']:not(.browser-default),
+input[type='number']:not(.browser-default),
+input[type='search']:not(.browser-default),
+textarea.materialize-textarea {
+  margin-top: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.date-layout {
+  text-align: center;
+  justify-content: center;
+}
+
+.date-day {
+  text-align: center;
+  float: right;
+}
+
+.todo-app {
+  background-color: white;
+  width: 30vw;
+  heigh5: 500px;
+}
+
+.todo-form {
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.white-app {
+  margin-top: 50px;
+  min-height: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.todo {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  margin: 10px auto;
+  max-width: 25vw;
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 800px) {
+  .todo {
+    max-width: 75vw;
+  }
+
+  .todo-app {
+    width: 80vw;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-item {
+  text-align: center;
+  justify-content: center;
+  margin: 0 15px;
+  display: inline;
 }
