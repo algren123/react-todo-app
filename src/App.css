@@ -60,7 +60,7 @@ li {
 .todo-app {
   background-color: white;
   width: 30vw;
-  height: 500px;
+  min-height: 500px;
 }
 
 .todo-form {
